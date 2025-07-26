@@ -1,22 +1,27 @@
 import { Link, NavLink } from "react-router";
-import { AiOutlineShoppingCart } from "react-icons/ai";
+
+import { CiUser } from "react-icons/ci";
+
 import { BsBroadcastPin } from "react-icons/bs";
 
 import { IoIosMenu } from "react-icons/io";
+
 import { useState } from "react";
+
 import { RxCross1 } from "react-icons/rx";
-import MainIcon from "../assets/mainIcon.png"
+
+import MainIcon from "../assets/mainIcon.png";
 
 const NavBar = () => {
     // State to handle mobile menu open/close
+
     const [open, setOpen] = useState(false);
 
     // Navigation fields for the navbar links
     const navFields = [
-        { id: 1, path: "category/all", name: "Home" },
-        { id: 2, path: "/Statistics", name: "Statistics" },
-        { id: 3, path: "/Dashboard", name: "Dashboard" },
-        { id: 4, path: "/AboutUs", name: "About Us" },
+        { id: 1, path: "", name: "Home" },
+        { id: 2, path: "about", name: "About Us" },
+        { id: 3, path: "/Dashboard", name: "Career" },
     ]
 
     if (open) {
@@ -29,32 +34,53 @@ const NavBar = () => {
         // Main navigation bar
         <nav className={`lg:py-6 py-5   bg-transparent pr-2 mt-2  flex flex-col items-center`}>
 
-            <div className="container m-auto flex justify-between items-center px-2 md:px-4">
-                {/* Mobile Menu Toggle Icon */}
-                <div className="lg:hidden z-50">
-                    {
-                        open ? <RxCross1 onClick={() => setOpen(!open)} className="text-3xl"></RxCross1> : <IoIosMenu onClick={() => setOpen(!open)} className="text-3xl"></IoIosMenu>
-                    }
-                </div>
-                {/* Live*/}
-                <button className=" py-1 border border-red-500 px-4 rounded"><Link className="flex items-center justify-center gap-1 text-red-500"><BsBroadcastPin /><span className="lg:block hidden">Live</span></Link></button>
-                {/* Navigation Links */}
-                <img className="w-[400px]" src={MainIcon} alt="" />
+            <div className="container m-auto flex justify-between items-center ">
+                <div className="flex gap-1">
+                    {/* Mobile Menu Toggle Icon */}
+                    <div className="lg:hidden z-50 ">
+                        {
+                            open ? <RxCross1 onClick={() => setOpen(!open)} className="text-2xl font-normal"></RxCross1> : <IoIosMenu onClick={() => setOpen(!open)} className="text-2xl font-normal"></IoIosMenu>
+                        }
+                    </div>
+                    {/* Live*/}
+                    <button className="  border border-red-500 px-3 rounded"><Link className="flex items-center justify-center gap-1 text-red-500"><BsBroadcastPin /><span className="lg:block mt-1 hidden">Live</span></Link></button>
 
-                <div className="flex  gap-3">
-                    {/* Add to Cart button */}
-                    <button className="btn indicator btn-circle" >
-                        <AiOutlineShoppingCart className="text-2xl text-black"></AiOutlineShoppingCart>
-                    </button>
+
                 </div>
+
+
+                {/* Main Icon */}
+                <img className="md:w-[300px] w-[220px]" src={MainIcon} alt="" />
+
+                {/* Add to Cart button */}
+                <div className="dropdown dropdown-end">
+                    <div tabIndex={0} role="button" className="">
+                        <div className="border border-black/50 px-1 py-1 rounded hover:border-black">
+                            <CiUser className="text-black/90 hover:text-black"></CiUser>
+                        </div>
+                    </div>
+                    <ul
+                        tabIndex={0}
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li>
+                            <a className="justify-between">
+                                Profile
+                                <span className="badge">New</span>
+                            </a>
+                        </li>
+                        <li><a>Settings</a></li>
+                        <li><a>Logout</a></li>
+                    </ul>
+                </div>
+
 
             </div>
-
+            {/* Navigation Links */}
             <div className={` ${open ? "left-0" : "left-[-500px]"} duration-700  lg:static lg:block  lg:w-auto lg:h-auto md:w-[30%] w-[45%] top-0 h-screen z-40 bg-neutral-100/90 lg:bg-transparent   absolute `}>
 
-                <ul className="lg:flex   gap-7 lg:mt-0 mt-19 lg:bg-transparent text-[#6b6b6f]">
+                <ul className="lg:flex   gap-7 lg:mt-0 mt-20 lg:bg-transparent text-[#6b6b6f]">
 
-                    {navFields.map((field) => <NavLink key={field.id} to={field.path} className={({ isActive }) => `rounded px-3 py-2 block ${isActive ? "text-white bg-black" :
+                    {navFields.map((field) => <NavLink key={field.id} to={field.path} className={({ isActive }) => `rounded px-3 py-2 block ${isActive ? "text-black/80" :
                         " hover:bg-neutral-100"}`}>{field.name}</NavLink>)}
                 </ul>
             </div>
