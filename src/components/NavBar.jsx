@@ -32,7 +32,7 @@ const NavBar = () => {
     }
     return (
         // Main navigation bar
-        <nav className={`lg:py-6 py-5   bg-transparent pr-2 mt-2  flex flex-col items-center`}>
+        <nav className={`lg:py-3 py-2   bg-transparent  flex flex-col items-center`}>
 
             <div className="container m-auto flex justify-between items-center ">
                 <div className="flex gap-1">

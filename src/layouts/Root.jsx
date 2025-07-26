@@ -1,4 +1,4 @@
-import React from 'react';
+
 import NavBar from '../components/NavBar';
 import { Outlet } from 'react-router';
 
@@ -8,7 +8,7 @@ const Root = () => {
             <header>
                 <NavBar></NavBar>
             </header>
-            <main className='container mx-auto'>
+            <main className='container mx-auto '>
                 <Outlet></Outlet>
             </main>
 
