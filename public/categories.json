@@ -1,0 +1,34 @@
+[
+    {
+        "id": 1,
+        "category": "breaking news"
+    },
+    {
+        "id": 2,
+        "category": "regular news"
+    },
+    {
+        "id": 3,
+        "category": "international news"
+    },
+    {
+        "id": 4,
+        "category": "sports"
+    },
+    {
+        "id": 5,
+        "category": "entertainment"
+    },
+    {
+        "id": 6,
+        "category": "culture"
+    },
+    {
+        "id": 7,
+        "category": "arts"
+    },
+    {
+        "id": 8,
+        "category": "technology"
+    }
+]
