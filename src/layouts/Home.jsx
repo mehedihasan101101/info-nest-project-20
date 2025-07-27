@@ -1,5 +1,6 @@
-import { Link, useLoaderData } from "react-router";
-import BreakingNewsHeadline from "../components/BreakingNewsHeadline";
+import { Link, NavLink, useLoaderData } from "react-router";
+
+import BreakingNewsHeadline from "./../components/BreakingNewsHeadline"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 const responsive = {
@@ -9,25 +10,23 @@ const responsive = {
     },
     tablet: {
         breakpoint: { max: 1024, min: 464 },
-        items: 6
+        items: 5
     },
     mobile: {
         breakpoint: { max: 464, min: 0 },
-        items: 1
+        items: 3
     }
 }
 const Home = () => {
     const categories = useLoaderData();
-    console.log(categories)
     return (
         <>
             {/* Breaking News Headlines */}
             <BreakingNewsHeadline></BreakingNewsHeadline>
-
-            <section className="mt-2 lg:hidden">
-                <Carousel className="flex" responsive={responsive} infinite={true} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
+            <section className="mt-2 ">
+                <Carousel className="flex" responsive={responsive} infinite={false} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                     {
-                        categories.map(eachCategory => <div><p>{eachCategory.category}</p></div>)
+                        categories.map(eachCategory => <div className=" px-1 w-full"><NavLink className={({ isActive }) => `border rounded-full flex items-center justify-center border-gray-300 py-1  text-center text-black${isActive && "text-red-500"}`}>{eachCategory.category}</NavLink></div>)
                     }
                 </Carousel>
 
