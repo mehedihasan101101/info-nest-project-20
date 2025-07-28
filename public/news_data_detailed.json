@@ -1,0 +1,706 @@
+[
+    {
+        "_id": "news-1",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category":"breaking_news",
+        "rating": {
+            "number": 3.8,
+            "badge": "Very Good"
+        },
+        "total_view": 1031,
+        "title": "Massive Explosion Rocks City Center",
+        "author": {
+            "name": "Ali Noor",
+            "published_date": "2025-07-23 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Massive Explosion Rocks City Center\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-2",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "breaking_news",
+        "rating": {
+            "number": 4.5,
+            "badge": "Very Good"
+        },
+        "total_view": 935,
+        "title": "President Declares National Emergency",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-19 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "President Declares National Emergency\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-3",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "breaking_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Very Good"
+        },
+        "total_view": 1112,
+        "title": "Fire Breaks Out in Parliament",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-18 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Fire Breaks Out in Parliament\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-4",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": false
+        },
+        "category": "breaking_news",
+        "rating": {
+            "number": 4.6,
+            "badge": "Excellent"
+        },
+        "total_view": 686,
+        "title": "Major Earthquake Hits Coastal Region",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Major Earthquake Hits Coastal Region\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-5",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "regular_news",
+        "rating": {
+            "number": 4.2,
+            "badge": "Good"
+        },
+        "total_view": 962,
+        "title": "City Council Approves New Budget",
+        "author": {
+            "name": "Laura Bennett",
+            "published_date": "2025-07-19 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/1.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "City Council Approves New Budget\n\nIn a recent development under the 'regular news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-6",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": false
+        },
+        "category": "regular_news",
+        "rating": {
+            "number": 3.8,
+            "badge": "Excellent"
+        },
+        "total_view": 403,
+        "title": "Local Market Prices Drop",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-25 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Local Market Prices Drop\n\nIn a recent development under the 'regular news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-7",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": false
+        },
+        "category": "regular_news",
+        "rating": {
+            "number": 4.8,
+            "badge": "Excellent"
+        },
+        "total_view": 357,
+        "title": "Public Transport Gets Funding",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-18 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Public Transport Gets Funding\n\nIn a recent development under the 'regular news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-8",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "regular_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Excellent"
+        },
+        "total_view": 978,
+        "title": "New School Year Begins Smoothly",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-25 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "New School Year Begins Smoothly\n\nIn a recent development under the 'regular news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-9",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "international_news",
+        "rating": {
+            "number": 4.8,
+            "badge": "Very Good"
+        },
+        "total_view": 491,
+        "title": "Peace Talks Resume Between Nations",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-19 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Peace Talks Resume Between Nations\n\nIn a recent development under the 'international news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-10",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "international_news",
+        "rating": {
+            "number": 3.5,
+            "badge": "Excellent"
+        },
+        "total_view": 1089,
+        "title": "Floods Affect Millions in Southeast Asia",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-24 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Floods Affect Millions in Southeast Asia\n\nIn a recent development under the 'international news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-11",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "international_news",
+        "rating": {
+            "number": 4.1,
+            "badge": "Good"
+        },
+        "total_view": 969,
+        "title": "Global Leaders Meet for Climate Summit",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-25 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Global Leaders Meet for Climate Summit\n\nIn a recent development under the 'international news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-12",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "international_news",
+        "rating": {
+            "number": 4.6,
+            "badge": "Good"
+        },
+        "total_view": 1034,
+        "title": "Elections Held Peacefully in EU",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-24 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Elections Held Peacefully in EU\n\nIn a recent development under the 'international news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-13",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": false
+        },
+        "category": "sports_news",
+        "rating": {
+            "number": 4.1,
+            "badge": "Excellent"
+        },
+        "total_view": 453,
+        "title": "Championship Match Ends in Tie",
+        "author": {
+            "name": "Ali Noor",
+            "published_date": "2025-07-17 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Championship Match Ends in Tie\n\nIn a recent development under the 'sports' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-14",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": false
+        },
+        "category": "sports_news",
+        "rating": {
+            "number": 3.7,
+            "badge": "Very Good"
+        },
+        "total_view": 1169,
+        "title": "Star Player Breaks Goal Record",
+        "author": {
+            "name": "Laura Bennett",
+            "published_date": "2025-07-20 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/1.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Star Player Breaks Goal Record\n\nIn a recent development under the 'sports' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-15",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "sports_news",
+        "rating": {
+            "number": 4.1,
+            "badge": "Very Good"
+        },
+        "total_view": 715,
+        "title": "Team Secures Historic Victory",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-19 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Team Secures Historic Victory\n\nIn a recent development under the 'sports' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-16",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "sports_news",
+        "rating": {
+            "number": 4.5,
+            "badge": "Average"
+        },
+        "total_view": 613,
+        "title": "Olympic Games Preparations Underway",
+        "author": {
+            "name": "Maya Green",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/3.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Olympic Games Preparations Underway\n\nIn a recent development under the 'sports' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-17",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "entertainment_news",
+        "rating": {
+            "number": 4.4,
+            "badge": "Good"
+        },
+        "total_view": 616,
+        "title": "Blockbuster Movie Breaks Box Office Records",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-18 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Blockbuster Movie Breaks Box Office Records\n\nIn a recent development under the 'entertainment' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-18",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "entertainment_news",
+        "rating": {
+            "number": 3.7,
+            "badge": "Excellent"
+        },
+        "total_view": 302,
+        "title": "Celebrity Couple Announces Separation",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-20 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Celebrity Couple Announces Separation\n\nIn a recent development under the 'entertainment' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-19",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "entertainment_news",
+        "rating": {
+            "number": 3.8,
+            "badge": "Good"
+        },
+        "total_view": 581,
+        "title": "New Music Album Tops Charts",
+        "author": {
+            "name": "Maya Green",
+            "published_date": "2025-07-24 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/3.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "New Music Album Tops Charts\n\nIn a recent development under the 'entertainment' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-20",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "entertainment_news",
+        "rating": {
+            "number": 4.4,
+            "badge": "Excellent"
+        },
+        "total_view": 550,
+        "title": "Award Show Highlights Best Performances",
+        "author": {
+            "name": "Ali Noor",
+            "published_date": "2025-07-27 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Award Show Highlights Best Performances\n\nIn a recent development under the 'entertainment' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-21",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": false
+        },
+        "category": "culture_news",
+        "rating": {
+            "number": 4.2,
+            "badge": "Average"
+        },
+        "total_view": 1158,
+        "title": "Traditional Festival Celebrated Grandly",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-24 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Traditional Festival Celebrated Grandly\n\nIn a recent development under the 'culture' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-22",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "culture_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Average"
+        },
+        "total_view": 1020,
+        "title": "Museum Opens New Exhibit",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-26 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Museum Opens New Exhibit\n\nIn a recent development under the 'culture' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-23",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": false
+        },
+        "category": "culture_news",
+        "rating": {
+            "number": 3.7,
+            "badge": "Average"
+        },
+        "total_view": 593,
+        "title": "Historical Landmark Restored",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-23 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Historical Landmark Restored\n\nIn a recent development under the 'culture' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-24",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "culture_news",
+        "rating": {
+            "number": 4.1,
+            "badge": "Excellent"
+        },
+        "total_view": 613,
+        "title": "Cultural Exchange Program Launched",
+        "author": {
+            "name": "Laura Bennett",
+            "published_date": "2025-07-24 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/1.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Cultural Exchange Program Launched\n\nIn a recent development under the 'culture' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-25",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": false
+        },
+        "category": "arts_news",
+        "rating": {
+            "number": 5.0,
+            "badge": "Excellent"
+        },
+        "total_view": 425,
+        "title": "Local Artist Wins International Award",
+        "author": {
+            "name": "Maya Green",
+            "published_date": "2025-07-18 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/3.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Local Artist Wins International Award\n\nIn a recent development under the 'arts' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-26",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "arts_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Average"
+        },
+        "total_view": 887,
+        "title": "Gallery Showcases Modern Art",
+        "author": {
+            "name": "Maya Green",
+            "published_date": "2025-07-27 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/3.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Gallery Showcases Modern Art\n\nIn a recent development under the 'arts' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-27",
+        "others_info": {
+            "is_todays_pick": true,
+            "is_trending": true
+        },
+        "category": "arts_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Good"
+        },
+        "total_view": 417,
+        "title": "Theatre Group Performs Classic Play",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-26 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Theatre Group Performs Classic Play\n\nIn a recent development under the 'arts' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-28",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "arts_news",
+        "rating": {
+            "number": 3.9,
+            "badge": "Good"
+        },
+        "total_view": 306,
+        "title": "Photography Contest Winners Announced",
+        "author": {
+            "name": "James Clarke",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/2.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Photography Contest Winners Announced\n\nIn a recent development under the 'arts' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-29",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": false
+        },
+        "category": "technology_news",
+        "rating": {
+            "number": 4.3,
+            "badge": "Excellent"
+        },
+        "total_view": 368,
+        "title": "Tech Giant Unveils New Smartphone",
+        "author": {
+            "name": "Ali Noor",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Tech Giant Unveils New Smartphone\n\nIn a recent development under the 'technology' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-30",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "technology_news",
+        "rating": {
+            "number": 4.0,
+            "badge": "Excellent"
+        },
+        "total_view": 656,
+        "title": "Breakthrough in AI Research",
+        "author": {
+            "name": "Tom Holland",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/6.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Breakthrough in AI Research\n\nIn a recent development under the 'technology' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-31",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "technology_news",
+        "rating": {
+            "number": 4.7,
+            "badge": "Average"
+        },
+        "total_view": 368,
+        "title": "Cybersecurity Concerns on the Rise",
+        "author": {
+            "name": "Sara Malik",
+            "published_date": "2025-07-21 12:00:00",
+            "img": "https://randomuser.me/api/portraits/women/5.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Cybersecurity Concerns on the Rise\n\nIn a recent development under the 'technology' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    },
+    {
+        "_id": "news-32",
+        "others_info": {
+            "is_todays_pick": false,
+            "is_trending": true
+        },
+        "category": "technology_news",
+        "rating": {
+            "number": 5.0,
+            "badge": "Excellent"
+        },
+        "total_view": 328,
+        "title": "Startups Show Innovation at Tech Fair",
+        "author": {
+            "name": "Ali Noor",
+            "published_date": "2025-07-22 12:00:00",
+            "img": "https://randomuser.me/api/portraits/men/4.jpg"
+        },
+        "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
+        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "details": "Startups Show Innovation at Tech Fair\n\nIn a recent development under the 'technology' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
+    }
+]

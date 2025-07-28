@@ -1,16 +1,11 @@
-import { Link, NavLink } from "react-router";
-
+import { Link, NavLink,  } from "react-router";
 import { CiUser } from "react-icons/ci";
-
 import { BsBroadcastPin } from "react-icons/bs";
-
 import { IoIosMenu } from "react-icons/io";
-
 import { useState } from "react";
-
 import { RxCross1 } from "react-icons/rx";
-
 import MainIcon from "../assets/mainIcon.png";
+
 
 const NavBar = () => {
     // State to handle mobile menu open/close
@@ -19,7 +14,7 @@ const NavBar = () => {
 
     // Navigation fields for the navbar links
     const navFields = [
-        { id: 1, path: "", name: "Home" },
+        { id: 1, path: "home", name: "Home" },
         { id: 2, path: "about", name: "About Us" },
         { id: 3, path: "/Dashboard", name: "Career" },
     ]

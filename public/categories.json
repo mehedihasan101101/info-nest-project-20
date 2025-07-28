@@ -1,34 +1,47 @@
 [
     {
+        "id": 0,
+        "category": "All",
+        "link": "all_news"
+    },
+    {
         "id": 1,
-        "category": "breaking news"
+        "category": "Breaking news",
+        "link": "breaking_news"
     },
     {
         "id": 2,
-        "category": "regular news"
+        "category": "Regular news",
+        "link": "regular_news"
     },
     {
         "id": 3,
-        "category": "international news"
+        "category": "International news",
+        "link": "international_news"
     },
     {
         "id": 4,
-        "category": "sports"
+        "category": "Sports",
+        "link": "sports_news"
     },
     {
         "id": 5,
-        "category": "entertainment"
+        "category": "Entertainment",
+        "link": "entertainment_news"
     },
     {
         "id": 6,
-        "category": "culture"
+        "category": "Culture",
+        "link": "culture_news"
     },
     {
         "id": 7,
-        "category": "arts"
+        "category": "Arts",
+        "link": "arts_news"
     },
     {
         "id": 8,
-        "category": "technology"
+        "category": "Technology",
+        "link": "technology_news"
     }
 ]
