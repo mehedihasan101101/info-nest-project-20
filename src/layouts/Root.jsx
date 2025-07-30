@@ -5,10 +5,10 @@ import { Outlet } from 'react-router';
 const Root = () => {
     return (
         <>
-            <header>
+            <header className='lg:p-0 p-1'>
                 <NavBar></NavBar>
             </header>
-            <main className='container mx-auto '>
+            <main className='container mx-auto  lg:p-0 p-1 '>
                 <Outlet></Outlet>
             </main>
 

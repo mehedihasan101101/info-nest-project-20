@@ -3,6 +3,15 @@ import { Link, NavLink, Outlet, useLoaderData } from "react-router";
 import BreakingNewsHeadline from "./../components/BreakingNewsHeadline"
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import { FaFacebookF } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import instagramIcon from "./../assets/instagram.png"
+import classImg from './../assets/class.png'
+import playgroundImg from './../assets/playground.png'
+import swimming from './../assets/swimming.png'
+
+
+
 const responsive = {
     desktop: {
         breakpoint: { max: 3000, min: 1024 },
@@ -21,10 +30,10 @@ const Home = () => {
     const categories = useLoaderData();
     return (
         <>
-        
+
             {/* Breaking News Headlines */}
             <BreakingNewsHeadline></BreakingNewsHeadline>
-            <section className="mt-2 ">
+            <section className="mt-2 py-4">
                 <Carousel className="flex" responsive={responsive} infinite={false} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
                     {
                         categories.map(eachCategory => <div className=" px-1 w-full"><NavLink to={eachCategory.link} className={({ isActive }) => `border rounded-full flex items-center justify-center border-gray-300 py-1  text-center text-black ${isActive && "text-red-500"}`}>{eachCategory.category}</NavLink></div>)
@@ -35,14 +44,35 @@ const Home = () => {
 
             <div className="grid grid-cols-12">
                 {/* News section */}
-                <div className="col-span-10">
+                <div className="lg:col-span-11 md:col-span-9 col-span-8">
                     <Outlet></Outlet>
                 </div>
 
                 {/* Aside for other contents */}
-                <aside className="col-span-2">
-                    <h1>Aside</h1>
-                </aside>g
+                <aside className="lg:col-span-2 md:col-span-3 mt-5 col-span-4 ">
+                    {/* Find us Section */}
+                    <section className="">
+                        <h5 className="text-xl font-bold">Find Us On</h5>
+                        <button className=" px-5 py-2 border border-gray-200 rounded-t-md  w-full flex cursor-pointer items-center gap-1"> <span className=" bg-[#F3F3F3] text-[#3B599C] p-2   rounded-full"><FaFacebookF className="text-xl"></FaFacebookF></span>Facebook</button>
+                        <button className=" px-5 py-2 border border-gray-200   w-full flex cursor-pointer items-center gap-1"> <span className=" bg-[#F3F3F3]  p-2   rounded-full"><BsTwitterX className="text-xl"></BsTwitterX></span>Twitter</button>
+                        <button className=" px-5 py-2 border border-gray-200 rounded-b-md  w-full flex cursor-pointer items-center gap-1"> <span className=" bg-[#F3F3F3]   p-2   rounded-full"><img width={"24px"} src={instagramIcon} alt="" /></span>Instagram</button>
+                    </section>
+                    {/* Q-Zone */}
+                    <section className="bg-[#F3F3F3] py-5 px-2 mt-4">
+                        <h5 className="text-xl font-bold">Q-Zone</h5>
+                        <div className="">
+                            <img src={classImg} alt="" />
+                        </div>
+                        <div className="">
+                            <img src={swimming} alt="" />
+                        </div>
+                        <div className="">
+                            <img src={playgroundImg} alt="" />
+                        </div>
+
+                    </section>
+
+                </aside>
             </div>
         </>
     );
