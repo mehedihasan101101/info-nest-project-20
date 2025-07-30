@@ -33,15 +33,13 @@ const Home = () => {
 
             {/* Breaking News Headlines */}
             <BreakingNewsHeadline></BreakingNewsHeadline>
-            <section className="mt-2 py-4">
-                <Carousel className="flex" responsive={responsive} infinite={false} removeArrowOnDeviceType={["tablet", "mobile", "desktop"]}>
-                    {
-                        categories.map(eachCategory => <div className=" px-1 w-full"><NavLink to={eachCategory.link} className={({ isActive }) => `border rounded-full flex items-center justify-center border-gray-300 py-1  text-center text-black ${isActive && "text-red-500"}`}>{eachCategory.category}</NavLink></div>)
-                    }
-                </Carousel>
+            <section className="mt-2 py-4 lg:grid lg:grid-flow-col lg:overflow-hidden  flex  gap-1 overflow-auto">
+
+                {
+                    categories.map(eachCategory => <div className=" rounded-full flex items-center justify-center  border-gray-300 p-1 h-[30px] min-w-[150px] border"><NavLink to={eachCategory.link} className={({ isActive }) => `  text-center text-black ${isActive && "text-red-500"}`}>{eachCategory.category}</NavLink></div>)
+                }
 
             </section>
-
             <div className="grid grid-cols-12">
                 {/* News section */}
                 <div className="lg:col-span-11 md:col-span-9 col-span-8">
