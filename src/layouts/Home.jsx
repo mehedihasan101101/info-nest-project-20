@@ -1,31 +1,20 @@
-import { Link, NavLink, Outlet, useLoaderData } from "react-router";
-
-import BreakingNewsHeadline from "./../components/BreakingNewsHeadline"
-import Carousel from "react-multi-carousel";
-import "react-multi-carousel/lib/styles.css";
+import { NavLink, Outlet, useLoaderData } from "react-router";
+import BreakingNewsHeadline from "./../components/BreakingNewsHeadline";
 import { FaFacebookF } from "react-icons/fa6";
+
 import { BsTwitterX } from "react-icons/bs";
+
 import instagramIcon from "./../assets/instagram.png"
+
 import classImg from './../assets/class.png'
+
 import playgroundImg from './../assets/playground.png'
+
 import swimming from './../assets/swimming.png'
 
+import adImage from './../assets/Advertisement.png'
 
 
-const responsive = {
-    desktop: {
-        breakpoint: { max: 3000, min: 1024 },
-        items: 9
-    },
-    tablet: {
-        breakpoint: { max: 1024, min: 464 },
-        items: 5
-    },
-    mobile: {
-        breakpoint: { max: 464, min: 0 },
-        items: 3
-    }
-}
 const Home = () => {
     const categories = useLoaderData();
     return (
@@ -36,13 +25,13 @@ const Home = () => {
             <section className="mt-2 py-4 lg:grid lg:grid-flow-col lg:overflow-hidden  flex  gap-1 overflow-auto">
 
                 {
-                    categories.map(eachCategory => <div className=" rounded-full flex items-center justify-center  border-gray-300 p-1 h-[30px] min-w-[150px] border"><NavLink to={eachCategory.link} className={({ isActive }) => `  text-center text-black ${isActive && "text-red-500"}`}>{eachCategory.category}</NavLink></div>)
+                    categories.map(eachCategory => <NavLink to={eachCategory.link} className={({ isActive }) => `  text-center text-black ${isActive && "text-red-500"} rounded-full flex items-center justify-center  border-gray-300 p-1 h-[30px] min-w-[150px] border`}>{eachCategory.category}</NavLink>)
                 }
 
             </section>
             <div className="grid grid-cols-12">
                 {/* News section */}
-                <div className="lg:col-span-11 md:col-span-9 col-span-8">
+                <div className="lg:col-span-10 md:col-span-9 col-span-8">
                     <Outlet></Outlet>
                 </div>
 
@@ -68,6 +57,12 @@ const Home = () => {
                             <img src={playgroundImg} alt="" />
                         </div>
 
+                    </section>
+
+                    {/* Advertisement  */}
+
+                    <section className="mt-4">
+                        <img src={adImage} alt="" />
                     </section>
 
                 </aside>

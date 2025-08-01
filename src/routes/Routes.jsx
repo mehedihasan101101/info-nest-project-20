@@ -5,8 +5,9 @@ import {
 import Home from "../layouts/Home";
 import AboutUs from "../layouts/AboutUs";
 import Root from "../layouts/Root";
-import NewsCard from "../components/NewsCard";
+import NewsCard from "../components/NewsSection";
 import handleApiData from "../utilities/handleApiData";
+import NewsSection from "../components/NewsSection";
 
 
 const router = createBrowserRouter([
@@ -32,7 +33,7 @@ const router = createBrowserRouter([
                     ,
                     {
                         path: ":categoryName",
-                        element: <NewsCard></NewsCard>,
+                        element: <NewsSection></NewsSection>,
                         loader: handleApiData
                     },
                     {

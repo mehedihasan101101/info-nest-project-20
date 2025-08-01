@@ -1,14 +1,10 @@
-import { useLoaderData } from "react-router";
+import React from 'react';
 
-
-const NewsCard = () => {
-
-    const data = useLoaderData();
-    console.log(data)
-
+const NewsCard = ({ eachData }) => {
+    const { author } = eachData;
     return (
         <div>
-            <h1>This is news Card</h1>
+            <img className='rounded-full' src={author.img} alt="" />
         </div>
     );
 };
