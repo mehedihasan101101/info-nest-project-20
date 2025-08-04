@@ -1,11 +1,54 @@
-import React from 'react';
+import { CiBookmark } from "react-icons/ci";
+import { CiShare2 } from "react-icons/ci";
+import { Link } from "react-router";
+import StarRatings from 'react-star-ratings';
 
 const NewsCard = ({ eachData }) => {
-    const { author } = eachData;
+    console.log(eachData)
+    const { author, title, image_url, details, rating } = eachData;
     return (
-        <div>
-            <img className='rounded-full' src={author.img} alt="" />
+        <div className="border border-gray-200 rounded">
+
+            <div className="flex items-center justify-between bg-[#F3F3F3] md:py-3 md:px-3 py-2 px-1">
+                <div className="flex items-center gap-2">
+                    <img className='rounded-full w-12' src={author.img} alt="" />
+                    <div>
+                        <p className="font-bold ">{author.name}</p>
+                        <p className="text-[#6b6b6f]">{author.published_date}</p>
+                    </div>
+                </div>
+
+                <div className="flex text-2xl font-bold text-[#6b6b6f]">
+                    <Link><CiBookmark></CiBookmark></Link>
+                    <Link><CiShare2></CiShare2></Link>
+                </div>
+            </div>
+            <div className="p-2 space-y-3">
+                <h1 className="text-2xl font-extrabold">{title}</h1>
+                <img className="rounded w-full h-[230px]" src={image_url} alt="" />
+                <div className=" ">
+                    <p className="text-[17px] text-[#6b6b6f]">{details.slice(0, 200)}...</p>
+                    <button> <Link className="font-bold text-red-500">Read More</Link></button>
+                </div>
+            </div>
+
+            <div className="p-2">
+                <hr className="text-gray-200 p" />
+                <div className="flex items-center gap-1">
+                    <StarRatings className=""
+                        rating={rating.number}
+                        starRatedColor="gold"
+                        changeRating={(newRating) => console.log(newRating)}
+                        numberOfStars={5}
+                        starSpacing="3px"
+                        starDimension="25px"
+                        name='rating'
+                    />
+                    <p className="text-[17px] mt-2">{rating.number}</p>
+                </div>
+            </div>
         </div>
+
     );
 };
 

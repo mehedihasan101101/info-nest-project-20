@@ -14,11 +14,11 @@
         "title": "Massive Explosion Rocks City Center",
         "author": {
             "name": "Ali Noor",
-            "published_date": "2025-07-23 12:00:00",
+            "published_date": "2025-07-23    ",
             "img": "https://randomuser.me/api/portraits/men/4.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
-        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "image_url": "/img/news1.jpg",
         "details": "Massive Explosion Rocks City Center\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
     },
     {
@@ -36,11 +36,11 @@
         "title": "President Declares National Emergency",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-19 12:00:00",
+            "published_date": "2025-07-19    ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
-        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "image_url": "/img/news-2.jpg",
         "details": "President Declares National Emergency\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
     },
     {
@@ -58,11 +58,11 @@
         "title": "Fire Breaks Out in Parliament",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-18 12:00:00",
+            "published_date": "2025-07-18    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
-        "image_url": "https://i.ibb.co/7S6LcNk/breaking1-full.jpg",
+        "image_url": "/img/news3.jpg",
         "details": "Fire Breaks Out in Parliament\n\nIn a recent development under the 'breaking news' section, this event has drawn significant attention from the public and media alike. The situation unfolded over several hours and involved multiple stakeholders. Eyewitnesses reported a sequence of events that led to escalating tensions, prompting a swift response from authorities. Experts are analyzing the implications of this event in the context of current socio-political dynamics.\n\nFurther investigations are being conducted to determine the causes and consequences. Reactions have poured in from officials, community leaders, and citizens, reflecting a wide spectrum of opinions. This incident is expected to influence related developments in the coming days.\n\nStay tuned for comprehensive coverage, expert insights, and live updates as we continue to follow this important story."
     },
     {
@@ -80,7 +80,7 @@
         "title": "Major Earthquake Hits Coastal Region",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -102,7 +102,7 @@
         "title": "City Council Approves New Budget",
         "author": {
             "name": "Laura Bennett",
-            "published_date": "2025-07-19 12:00:00",
+            "published_date": "2025-07-19    ",
             "img": "https://randomuser.me/api/portraits/women/1.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -124,7 +124,7 @@
         "title": "Local Market Prices Drop",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-25 12:00:00",
+            "published_date": "2025-07-25    ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -146,7 +146,7 @@
         "title": "Public Transport Gets Funding",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-18 12:00:00",
+            "published_date": "2025-07-18    ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -168,7 +168,7 @@
         "title": "New School Year Begins Smoothly",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-25 12:00:00",
+            "published_date": "2025-07-25    ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -190,7 +190,7 @@
         "title": "Peace Talks Resume Between Nations",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-19 12:00:00",
+            "published_date": "2025-07-19    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -212,7 +212,7 @@
         "title": "Floods Affect Millions in Southeast Asia",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-24 12:00:00",
+            "published_date": "2025-07-24    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -234,7 +234,7 @@
         "title": "Global Leaders Meet for Climate Summit",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-25 12:00:00",
+            "published_date": "2025-07-25    ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -256,7 +256,7 @@
         "title": "Elections Held Peacefully in EU",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-24 12:00:00",
+            "published_date": "2025-07-24    ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -278,7 +278,7 @@
         "title": "Championship Match Ends in Tie",
         "author": {
             "name": "Ali Noor",
-            "published_date": "2025-07-17 12:00:00",
+            "published_date": "2025-07-17    ",
             "img": "https://randomuser.me/api/portraits/men/4.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -300,7 +300,7 @@
         "title": "Star Player Breaks Goal Record",
         "author": {
             "name": "Laura Bennett",
-            "published_date": "2025-07-20 12:00:00",
+            "published_date": "2025-07-20    ",
             "img": "https://randomuser.me/api/portraits/women/1.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -322,7 +322,7 @@
         "title": "Team Secures Historic Victory",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-19 12:00:00",
+            "published_date": "2025-07-19    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -344,7 +344,7 @@
         "title": "Olympic Games Preparations Underway",
         "author": {
             "name": "Maya Green",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21    ",
             "img": "https://randomuser.me/api/portraits/women/3.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -366,7 +366,7 @@
         "title": "Blockbuster Movie Breaks Box Office Records",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-18 12:00:00",
+            "published_date": "2025-07-18    ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -388,7 +388,7 @@
         "title": "Celebrity Couple Announces Separation",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-20 12:00:00",
+            "published_date": "2025-07-20    ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -410,7 +410,7 @@
         "title": "New Music Album Tops Charts",
         "author": {
             "name": "Maya Green",
-            "published_date": "2025-07-24 12:00:00",
+            "published_date": "2025-07-24    ",
             "img": "https://randomuser.me/api/portraits/women/3.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -432,7 +432,7 @@
         "title": "Award Show Highlights Best Performances",
         "author": {
             "name": "Ali Noor",
-            "published_date": "2025-07-27 12:00:00",
+            "published_date": "2025-07-27  ",
             "img": "https://randomuser.me/api/portraits/men/4.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -454,7 +454,7 @@
         "title": "Traditional Festival Celebrated Grandly",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-24 12:00:00",
+            "published_date": "2025-07-24  ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -476,7 +476,7 @@
         "title": "Museum Opens New Exhibit",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-26 12:00:00",
+            "published_date": "2025-07-26  ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -498,7 +498,7 @@
         "title": "Historical Landmark Restored",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-23 12:00:00",
+            "published_date": "2025-07-23  ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -520,7 +520,7 @@
         "title": "Cultural Exchange Program Launched",
         "author": {
             "name": "Laura Bennett",
-            "published_date": "2025-07-24 12:00:00",
+            "published_date": "2025-07-24  ",
             "img": "https://randomuser.me/api/portraits/women/1.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -542,7 +542,7 @@
         "title": "Local Artist Wins International Award",
         "author": {
             "name": "Maya Green",
-            "published_date": "2025-07-18 12:00:00",
+            "published_date": "2025-07-18  ",
             "img": "https://randomuser.me/api/portraits/women/3.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -564,7 +564,7 @@
         "title": "Gallery Showcases Modern Art",
         "author": {
             "name": "Maya Green",
-            "published_date": "2025-07-27 12:00:00",
+            "published_date": "2025-07-27  ",
             "img": "https://randomuser.me/api/portraits/women/3.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -586,7 +586,7 @@
         "title": "Theatre Group Performs Classic Play",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-26 12:00:00",
+            "published_date": "2025-07-26  ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -608,7 +608,7 @@
         "title": "Photography Contest Winners Announced",
         "author": {
             "name": "James Clarke",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21  ",
             "img": "https://randomuser.me/api/portraits/men/2.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -630,7 +630,7 @@
         "title": "Tech Giant Unveils New Smartphone",
         "author": {
             "name": "Ali Noor",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21  ",
             "img": "https://randomuser.me/api/portraits/men/4.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -652,7 +652,7 @@
         "title": "Breakthrough in AI Research",
         "author": {
             "name": "Tom Holland",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21  ",
             "img": "https://randomuser.me/api/portraits/men/6.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -674,7 +674,7 @@
         "title": "Cybersecurity Concerns on the Rise",
         "author": {
             "name": "Sara Malik",
-            "published_date": "2025-07-21 12:00:00",
+            "published_date": "2025-07-21  ",
             "img": "https://randomuser.me/api/portraits/women/5.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",
@@ -696,7 +696,7 @@
         "title": "Startups Show Innovation at Tech Fair",
         "author": {
             "name": "Ali Noor",
-            "published_date": "2025-07-22 12:00:00",
+            "published_date": "2025-07-22  ",
             "img": "https://randomuser.me/api/portraits/men/4.jpg"
         },
         "thumbnail_url": "https://i.ibb.co/t3KM01B/breaking1-thumb.jpg",

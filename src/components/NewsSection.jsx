@@ -6,15 +6,16 @@ const NewsSection = () => {
 
     const data = useLoaderData();
 
-    const { author } = data;
-    console.log(author)
-    console.log(data)
+
 
     return (
         <>
-            {
-                data.map(eachData => <NewsCard eachData={eachData}></NewsCard>)
-            }
+            <div className="grid grid-cols-3 gap-5 ">
+                {
+                    data.map(eachData => <NewsCard eachData={eachData}></NewsCard>)
+                }
+            </div>
+
         </>
 
     );

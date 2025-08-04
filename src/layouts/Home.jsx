@@ -29,14 +29,14 @@ const Home = () => {
                 }
 
             </section>
-            <div className="grid grid-cols-12">
+            <div className="grid grid-cols-12 gap-5">
                 {/* News section */}
-                <div className="lg:col-span-10 md:col-span-9 col-span-8">
+                <div className="lg:col-span-10 md:col-span-9 col-span-8 mt-2">
                     <Outlet></Outlet>
                 </div>
 
                 {/* Aside for other contents */}
-                <aside className="lg:col-span-2 md:col-span-3 mt-5 col-span-4 ">
+                <aside className="lg:col-span-2 md:col-span-3 mt-2 col-span-4 ">
                     {/* Find us Section */}
                     <section className="">
                         <h5 className="text-xl font-bold">Find Us On</h5>
