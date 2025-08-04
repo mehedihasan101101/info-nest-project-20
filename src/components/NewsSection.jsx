@@ -10,7 +10,7 @@ const NewsSection = () => {
 
     return (
         <>
-            <div className="grid grid-cols-3 gap-5 ">
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-5 ">
                 {
                     data.map(eachData => <NewsCard eachData={eachData}></NewsCard>)
                 }
