@@ -29,7 +29,7 @@ const NewsCard = ({ eachData }) => {
                 <img className="rounded w-full lg:h-[230px]" src={image_url} alt="" />
                 <div className=" ">
                     <p className="text-[17px] text-[#6b6b6f] hidden lg:block">{details.slice(0, 200)}...</p>
-                    <p className="text-[17px] text-[#6b6b6f]">{details.slice(0, 100)}...</p>
+                    <p className="text-[17px] text-[#6b6b6f] lg:hidden">{details.slice(0, 100)}...</p>
                     <button> <Link className="font-bold text-red-500">Read More</Link></button>
                 </div>
             </div>
