@@ -13,9 +13,15 @@ import playgroundImg from './../assets/playground.png'
 import swimming from './../assets/swimming.png'
 
 import adImage from './../assets/Advertisement.png'
+import { useContext } from "react";
+import { AutContext } from "../Context/AuthContext";
+
+
 
 
 const Home = () => {
+    const {Name} = useContext(AutContext)
+    console.log(Name)
     const categories = useLoaderData();
     return (
         <>
@@ -36,7 +42,7 @@ const Home = () => {
                 </div>
 
                 {/* Aside for other contents */}
-                <aside className="lg:col-span-2 md:col-span-3 mt-2 col-span-4 ">
+                <aside className="lg:col-span-2 md:col-span-3 mt-2 col-span-4  ">
                     {/* Find us Section */}
                     <section className="">
                         <h5 className="text-xl font-bold">Find Us On</h5>
