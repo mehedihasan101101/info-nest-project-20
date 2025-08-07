@@ -1,4 +1,4 @@
-import { Link, NavLink,  } from "react-router";
+import { Link, NavLink, } from "react-router";
 import { CiUser } from "react-icons/ci";
 import { BsBroadcastPin } from "react-icons/bs";
 import { IoIosMenu } from "react-icons/io";
@@ -62,6 +62,9 @@ const NavBar = () => {
                                 Profile
                                 <span className="badge">New</span>
                             </a>
+                        </li>
+                        <li>
+                            <Link to={"signup"}>Sign Up</Link>
                         </li>
                         <li><a>Settings</a></li>
                         <li><a>Logout</a></li>
