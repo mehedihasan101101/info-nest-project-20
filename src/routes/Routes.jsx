@@ -9,6 +9,7 @@ import NewsCard from "../components/NewsSection";
 import handleApiData from "../utilities/handleApiData";
 import NewsSection from "../components/NewsSection";
 import SignUp from "../layouts/SignUp";
+import Login from "../components/Login";
 
 
 const router = createBrowserRouter([
@@ -48,8 +49,12 @@ const router = createBrowserRouter([
                 element: <AboutUs></AboutUs>
             },
             {
-                path:"signup",
-                element:<SignUp></SignUp>
+                path: "signup",
+                element: <SignUp></SignUp>
+            },
+            {
+                path: "login",
+                element: <Login></Login>
             }
         ]
     },
