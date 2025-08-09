@@ -59,6 +59,7 @@ const Login = () => {
 
 
                     <p className="">Don’t have an account?<Link to={"/signup"} className="text-blue-500 ml-1">Sign Up</Link></p>
+                    <Link to={"/recovery"} className="mt-[-12px] text-blue-500">Forget Password</Link>
 
                     {/* error */}
                     {errorMessage && <p className="text-red-500">{errorMessage}</p>}

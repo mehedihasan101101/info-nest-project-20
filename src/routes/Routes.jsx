@@ -9,7 +9,9 @@ import NewsCard from "../components/NewsSection";
 import handleApiData from "../utilities/handleApiData";
 import NewsSection from "../components/NewsSection";
 import SignUp from "../layouts/SignUp";
-import Login from "../components/Login";
+import Login from "../layouts/Login";
+import PassReset from "../layouts/PassReset";
+
 
 
 const router = createBrowserRouter([
@@ -55,6 +57,10 @@ const router = createBrowserRouter([
             {
                 path: "login",
                 element: <Login></Login>
+            },
+            {
+                path: "recovery",
+                element: <PassReset></PassReset>
             }
         ]
     },

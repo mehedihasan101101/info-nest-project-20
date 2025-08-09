@@ -18,7 +18,7 @@ const NavBar = () => {
     function handleLogOut() {
 
         logOut()
-            .then(result =>
+            .then( () =>
                 SetUser(null)
 
             )
