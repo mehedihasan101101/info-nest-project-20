@@ -5,7 +5,7 @@ import StarRatings from 'react-star-ratings';
 import { FaEye } from "react-icons/fa";
 
 const NewsCard = ({ eachData }) => {
-    console.log(eachData)
+
     const { author, title, image_url, details, rating, total_view } = eachData;
     return (
         <div className="border flex flex-col border-gray-200 rounded ">

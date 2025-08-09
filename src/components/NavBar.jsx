@@ -10,15 +10,17 @@ import { AutContext } from "../Context/AuthContext";
 
 const NavBar = () => {
     // State to handle mobile menu open/close
-    const { user, logOut } = useContext(AutContext)
+    const { user, logOut, SetUser } = useContext(AutContext);
     const [open, setOpen] = useState(false);
     console.log(user)
 
     // Log User Out 
     function handleLogOut() {
+
         logOut()
             .then(result =>
-                console.log(result)
+                SetUser(null)
+
             )
             .catch(error => {
                 console.log(error)
