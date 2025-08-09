@@ -30,7 +30,7 @@ const NewsCard = ({ eachData }) => {
                 <div className=" ">
                     <p className="text-[17px] text-[#6b6b6f] hidden lg:block">{details.slice(0, 200)}...</p>
                     <p className="text-[17px] text-[#6b6b6f] lg:hidden">{details.slice(0, 100)}...</p>
-                    <button> <Link className="font-bold text-red-500">Read More</Link></button>
+                    <button> <Link to={eachData._id} className="font-bold text-red-500">Read More</Link></button>
                 </div>
             </div>
             <div className="px-2">

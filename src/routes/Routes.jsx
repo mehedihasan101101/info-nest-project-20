@@ -5,12 +5,12 @@ import {
 import Home from "../layouts/Home";
 import AboutUs from "../layouts/AboutUs";
 import Root from "../layouts/Root";
-import NewsCard from "../components/NewsSection";
 import handleApiData from "../utilities/handleApiData";
 import NewsSection from "../components/NewsSection";
 import SignUp from "../layouts/SignUp";
 import Login from "../layouts/Login";
 import PassReset from "../layouts/PassReset";
+import SingleNews from "../layouts/SingleNews";
 
 
 
@@ -40,11 +40,12 @@ const router = createBrowserRouter([
                         element: <NewsSection></NewsSection>,
                         loader: handleApiData
                     },
-                    {
-                        path: ":categoryName/:id",
-                        element: <h1>single</h1>
-                    }
                 ]
+            },
+            {
+                path: "home/:categoryName/:id",
+                loader: handleApiData,
+                element: <SingleNews></SingleNews>
             },
             {
                 path: "about",

@@ -35,7 +35,7 @@ const PassReset = () => {
                     {/* Email */}
                     <label className="font-bold">Email</label>
                     <input name="email" className="input validator  border-0 bg-gray-100 border-gray-200 w-full" type="email" required placeholder="mail@site.com" />
-
+                    {errorM && <p>{errorM}</p>}
                     <input className="btn bg-black text-white " type="submit" value="Recovery" />
                 </form>
 

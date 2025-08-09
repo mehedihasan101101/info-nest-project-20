@@ -12,7 +12,7 @@ const NewsSection = () => {
         <>
             <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-6 gap-5 ">
                 {
-                    data.map(eachData => <NewsCard eachData={eachData}></NewsCard>)
+                    data.map(eachData => <NewsCard key={eachData._id} eachData={eachData}></NewsCard>)
                 }
             </div>
 
