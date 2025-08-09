@@ -13,15 +13,13 @@ import playgroundImg from './../assets/playground.png'
 import swimming from './../assets/swimming.png'
 
 import adImage from './../assets/Advertisement.png'
-import { useContext } from "react";
-import { AutContext } from "../Context/AuthContext";
+
 
 
 
 
 const Home = () => {
-    const {Name} = useContext(AutContext)
-    console.log(Name)
+
     const categories = useLoaderData();
     return (
         <>

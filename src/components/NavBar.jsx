@@ -2,16 +2,28 @@ import { Link, NavLink, } from "react-router";
 import { CiUser } from "react-icons/ci";
 import { BsBroadcastPin } from "react-icons/bs";
 import { IoIosMenu } from "react-icons/io";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import MainIcon from "../assets/mainIcon.png";
+import { AutContext } from "../Context/AuthContext";
 
 
 const NavBar = () => {
     // State to handle mobile menu open/close
-
+    const { user, logOut } = useContext(AutContext)
     const [open, setOpen] = useState(false);
+    console.log(user)
 
+    // Log User Out 
+    function handleLogOut() {
+        logOut()
+            .then(result =>
+                console.log(result)
+            )
+            .catch(error => {
+                console.log(error)
+            })
+    }
     // Navigation fields for the navbar links
     const navFields = [
         { id: 1, path: "home", name: "Home" },
@@ -50,9 +62,13 @@ const NavBar = () => {
                 {/* Add to Cart button */}
                 <div className="dropdown dropdown-end">
                     <div tabIndex={0} role="button" className="">
-                        <div className="border border-black/50 px-1 py-1 rounded hover:border-black">
-                            <CiUser className="text-black/90 hover:text-black"></CiUser>
-                        </div>
+
+                        {user ?
+                            <img className="w-10 rounded-full" src={user.photoURL} alt="" srcset="" />
+                            :
+                            <div className="border border-black/50 px-1 py-1 rounded hover:border-black"><CiUser className="text-black/90 hover:text-black"></CiUser> </div>}
+
+
                     </div>
                     <ul
                         tabIndex={0}
@@ -63,14 +79,24 @@ const NavBar = () => {
                                 <span className="badge">New</span>
                             </a>
                         </li>
-                        <li>
-                            <Link to={"signup"}>Sign Up</Link>
-                        </li>
-                        <li>
-                            <Link to={"login"}>Login</Link>
-                        </li>
-                        <li><a>Settings</a></li>
-                        <li><a>Logout</a></li>
+                        {
+                            !user && <li>
+                                <Link to={"login"}>Login</Link>
+                            </li>
+                        }
+                        {
+                            !user && <li>
+                                <Link to={"signup"}>Sign Up</Link>
+                            </li>
+                        }
+
+                        {
+                            user && <li>
+                                <Link onClick={handleLogOut} >Logout</Link>
+                            </li>
+                        }
+
+
                     </ul>
                 </div>
 

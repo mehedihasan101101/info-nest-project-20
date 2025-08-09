@@ -1,26 +1,43 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import { AutContext } from "../Context/AuthContext";
-
+import { sendEmailVerification } from "firebase/auth";
+import auth from "../firebase/firebase.init";
 const Login = () => {
+    const nevigate = useNavigate()
     const [errorMessage, setErrorMessage] = useState("")
+    const [verificationErr, setverificationErr] = useState(false)
 
-    const { LogIn, user } = useContext(AutContext)
+    const { LogIn, SetUser } = useContext(AutContext)
+    // reverifying user
+    function reVerify() {
+        sendEmailVerification(auth.currentUser)
+    }
     function handleLogin(e) {
+
         e.preventDefault()
+        setErrorMessage("")
+        setverificationErr(false)
         const email = e.target.email.value;
         const password = e.target.password.value;
 
         LogIn(email, password)
-            .then(result => {
-                console.log(result);
+            .then((result) => {
+
+                if (!result.user.emailVerified) {
+                    setverificationErr(true);
+                }
+                else {
+                    nevigate("/")
+                    SetUser(result.user)
+                }
+
             })
             .catch(error => {
                 setErrorMessage(error.message)
                 console.log(error.message)
             })
     }
-    console.log(user)
     return (
         <div className=" flex flex-col justify-center items-center  mt-13 pb-12">
             <div className=" lg:w-[35%] w-[98%]  rounded flex flex-col items-center space-y-3 px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
@@ -45,6 +62,7 @@ const Login = () => {
 
                     {/* error */}
                     {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+                    {verificationErr && <p className="text-red-500">Please verify your email to log in.<Link onClick={reVerify} className="text-blue-500">Resend</Link></p>}
                     {/* submit */}
                     <input className="btn bg-black text-white " type="submit" value="Login" />
                 </form>
