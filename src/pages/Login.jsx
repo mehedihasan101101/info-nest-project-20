@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { AutContext } from "../Context/AuthContext";
 import { sendEmailVerification } from "firebase/auth";
 import auth from "../firebase/firebase.init";
@@ -8,11 +8,15 @@ const Login = () => {
     const [errorMessage, setErrorMessage] = useState("")
     const [verificationErr, setverificationErr] = useState(false)
 
-    const { LogIn, SetUser } = useContext(AutContext)
+    const location = useLocation()
+    const { LogIn } = useContext(AutContext)
+
     // reverifying user
+
     function reVerify() {
         sendEmailVerification(auth.currentUser)
     }
+
     function handleLogin(e) {
 
         e.preventDefault()
@@ -28,16 +32,16 @@ const Login = () => {
                     setverificationErr(true);
                 }
                 else {
-                    nevigate("/")
-                    SetUser(result.user)
+                    // redirecting to expected news page or home
+                    nevigate(location.state ? location.state : "/")
                 }
-
             })
             .catch(error => {
                 setErrorMessage(error.message)
                 console.log(error.message)
             })
     }
+
     return (
         <div className=" flex flex-col justify-center items-center  mt-13 pb-12">
             <div className=" lg:w-[35%] w-[98%]  rounded flex flex-col items-center space-y-3 px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">

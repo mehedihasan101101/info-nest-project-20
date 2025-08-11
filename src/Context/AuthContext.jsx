@@ -4,25 +4,12 @@ import auth from "../firebase/firebase.init";
 const AutContext = createContext(null)
 
 const AuthContext = ({ children }) => {
-
+    const [loading, setLoading] = useState(true);
     const [user, SetUser] = useState(null)
-    // observer
-    useEffect(() => {
-        const unsubscribe = onAuthStateChanged(auth, currentUser => {
-            if (currentUser.emailVerified) {
-                SetUser(currentUser)
-            }
-            else {
-                SetUser(null)
-            }
 
-            return () => {
-                unsubscribe();
-            }
-        })
-    }, [])
     // sign up
     function singUp(email, password) {
+        setLoading(true)
         return createUserWithEmailAndPassword(auth, email, password)
     }
     // update user
@@ -35,10 +22,12 @@ const AuthContext = ({ children }) => {
     // login
 
     function LogIn(email, password) {
+        setLoading(true)
         return signInWithEmailAndPassword(auth, email, password)
     }
     // Logout
     function logOut() {
+        setLoading(true)
         return signOut(auth)
     }
 
@@ -46,6 +35,20 @@ const AuthContext = ({ children }) => {
     function resetPassword(email) {
         return sendPasswordResetEmail(auth, email)
     }
+    // observer
+    useEffect(() => {
+        const unsubscribe = onAuthStateChanged(auth, currentUser => {
+            setLoading(false)
+            if (currentUser.emailVerified) {
+                SetUser(currentUser)
+                setLoading(false)
+            }
+
+            return () => {
+                unsubscribe();
+            }
+        })
+    }, [])
     const value = {
         user,
         SetUser,
@@ -53,7 +56,8 @@ const AuthContext = ({ children }) => {
         updateUser,
         LogIn,
         logOut,
-        resetPassword
+        resetPassword,
+        loading
     }
 
 

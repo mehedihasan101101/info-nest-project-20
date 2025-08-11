@@ -2,15 +2,16 @@ import {
     Navigate,
     createBrowserRouter,
 } from "react-router";
-import Home from "../layouts/Home";
-import AboutUs from "../layouts/AboutUs";
-import Root from "../layouts/Root";
+import Home from "../pages/Home";
+import AboutUs from "../pages/AboutUs";
+import Root from "../pages/Root";
 import handleApiData from "../utilities/handleApiData";
 import NewsSection from "../components/NewsSection";
-import SignUp from "../layouts/SignUp";
-import Login from "../layouts/Login";
-import PassReset from "../layouts/PassReset";
-import SingleNews from "../layouts/SingleNews";
+import SignUp from "../pages/SignUp";
+import Login from "../pages/Login";
+import PassReset from "../pages/PassReset";
+import SingleNews from "../pages/SingleNews";
+import PrivateRoute from "../privateRoute/PrivateRoute";
 
 
 
@@ -45,7 +46,7 @@ const router = createBrowserRouter([
             {
                 path: "home/:categoryName/:id",
                 loader: handleApiData,
-                element: <SingleNews></SingleNews>
+                element: <PrivateRoute><SingleNews></SingleNews></PrivateRoute>
             },
             {
                 path: "about",

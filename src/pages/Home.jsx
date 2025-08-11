@@ -1,5 +1,5 @@
 import { NavLink, Outlet, useLoaderData } from "react-router";
-import BreakingNewsHeadline from "./../components/BreakingNewsHeadline";
+import BreakingNewsHeadline from "../components/BreakingNewsHeadline";
 import Aside from "../components/Aside";
 
 
