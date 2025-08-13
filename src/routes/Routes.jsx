@@ -12,6 +12,7 @@ import Login from "../pages/Login";
 import PassReset from "../pages/PassReset";
 import SingleNews from "../pages/SingleNews";
 import PrivateRoute from "../privateRoute/PrivateRoute";
+import Dashboard from "../pages/Dashboard";
 
 
 
@@ -63,6 +64,10 @@ const router = createBrowserRouter([
             {
                 path: "recovery",
                 element: <PassReset></PassReset>
+            },
+            {
+                path: "dashboard",
+                element: <Dashboard></Dashboard>
             }
         ]
     },

@@ -41,7 +41,6 @@ const AuthContext = ({ children }) => {
             setLoading(false)
             if (currentUser.emailVerified) {
                 SetUser(currentUser)
-                setLoading(false)
             }
 
             return () => {
@@ -57,7 +56,8 @@ const AuthContext = ({ children }) => {
         LogIn,
         logOut,
         resetPassword,
-        loading
+        loading,
+        setLoading
     }
 
 
