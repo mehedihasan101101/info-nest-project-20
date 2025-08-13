@@ -2,8 +2,10 @@ import { useContext, useState } from "react";
 import { AutContext, AuthContext } from "../Context/AuthContext";
 import { sendEmailVerification } from "firebase/auth";
 import auth from "../firebase/firebase.init";
-import { Link } from "react-router";
+import { Link, useLocation } from "react-router";
 const SignUp = () => {
+    const location = useLocation()
+    console.log(location)
     const { singUp, updateUser } = useContext(AutContext);
     const [success, setSuccess] = useState(false)
     function handleSignUp(e) {
@@ -13,6 +15,7 @@ const SignUp = () => {
         const ImgLink = e.target.image.value;
         const email = e.target.email.value;
         const password = e.target.password.value;
+
 
         singUp(email, password)
             .then(result => {
@@ -37,7 +40,7 @@ const SignUp = () => {
             <div className=" lg:w-[35%] w-[98%]  rounded flex flex-col items-center space-y-3 px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                 <h1 className="text-3xl font-bold text-black  pb-3">Create your Account</h1>
                 {/* Success Message */}
-                {success && <p className="text-green-600 text-center">Account created! Check your email to verify before logging in. </p>}
+                {success && <p className="text-green-600 text-center">Account created! Please check your email for the verification link — you must verify your account to log in.. </p>}
                 <hr className=" text-gray-200 w-full pb-2" />
                 {/* form */}
 
@@ -67,7 +70,7 @@ const SignUp = () => {
                         <span className="mt-1">I Agree to the Terms & Conditions</span>
                     </label>
 
-                    <p className="">Already have an Account!<Link to={"/login"} className="text-blue-500 ml-1">Login</Link></p>
+                    <p className="">Already have an Account!<Link state={location.state} to={"/login"} className="text-blue-500 ml-1">Login</Link></p>
 
 
                     {/* submit */}

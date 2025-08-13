@@ -5,7 +5,7 @@ const AutContext = createContext(null)
 
 const AuthContext = ({ children }) => {
     const [loading, setLoading] = useState(true);
-    const [user, SetUser] = useState(null)
+    const [user, SetUser] = useState(null);
 
     // sign up
     function singUp(email, password) {

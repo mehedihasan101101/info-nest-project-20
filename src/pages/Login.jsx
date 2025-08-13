@@ -10,12 +10,20 @@ const Login = () => {
     const [verificationErr, setverificationErr] = useState(false)
 
     const location = useLocation()
+    console.log(location)
     const { LogIn, SetUser, user, loading, setLoading } = useContext(AutContext)
 
     // reverifying user
 
     function reVerify() {
+        setErrorMessage("")
         sendEmailVerification(auth.currentUser)
+            .then(
+                console.log("Success")
+            )
+            .catch(() => {
+                setErrorMessage("Check your inbox or spam folder for the verification link we’ve sent. If it has expired, please try again in a few minutes.")
+            })
     }
 
     function handleLogin(e) {
@@ -81,12 +89,12 @@ const Login = () => {
 
 
 
-                        <p className="">Don’t have an account?<Link to={"/signup"} className="text-blue-500 ml-1">Sign Up</Link></p>
+                        <p className="">Don’t have an account?<Link state={location.state} to={"/signup"} className="text-blue-500 ml-1">Sign Up</Link></p>
                         <Link to={"/recovery"} className="mt-[-12px] text-blue-500">Forget Password</Link>
 
                         {/* error */}
                         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
-                        {verificationErr && <p className="text-red-500">Please verify your email to log in.<Link onClick={reVerify} className="text-blue-500">Resend</Link></p>}
+                        {verificationErr && <p className="text-red-500">Please verify your email to log in.<Link state={location.state} onClick={reVerify} className="text-blue-500">Resend</Link></p>}
                         {/* submit */}
                         <input className="btn bg-black text-white " type="submit" value="Login" />
                     </form>
