@@ -25,10 +25,10 @@ const NewsCard = ({ eachData }) => {
                 </div>
             </div>
             <div className="p-2 space-y-3 flex-1">
-                <h1 className="lg:text-[23px] text-xl font-extrabold">{title}</h1>
-                <img className="rounded w-full lg:h-[230px]" src={image_url} alt="" />
+                <h1 className="lg:text-[17px] font-extrabold">{title}</h1>
+                <img className="rounded w-full  h-[160px]" src={image_url} alt="" />
                 <div className=" ">
-                    <p className="text-[17px] text-[#6b6b6f] hidden lg:block">{details.slice(0, 200)}...</p>
+                    <p className="text-[17px] text-[#6b6b6f] hidden lg:block">{details.slice(0, 50)}...</p>
                     <p className="text-[17px] text-[#6b6b6f] lg:hidden">{details.slice(0, 100)}...</p>
                     <button> <Link to={eachData._id} className="font-bold text-red-500">Read More</Link></button>
                 </div>
