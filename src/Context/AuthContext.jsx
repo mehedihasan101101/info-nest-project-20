@@ -6,6 +6,10 @@ const AutContext = createContext(null)
 const AuthContext = ({ children }) => {
     const [loading, setLoading] = useState(true);
     const [user, SetUser] = useState(null);
+    // bookMark Status
+
+    // bookmarked News
+    const [bookmarkedNews, setBookmarkedNews] = useState([]);
 
     // sign up
     function singUp(email, password) {
@@ -35,6 +39,8 @@ const AuthContext = ({ children }) => {
     function resetPassword(email) {
         return sendPasswordResetEmail(auth, email)
     }
+
+
     // observer
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
@@ -57,7 +63,10 @@ const AuthContext = ({ children }) => {
         logOut,
         resetPassword,
         loading,
-        setLoading
+        setLoading,
+        bookmarkedNews,
+        setBookmarkedNews,
+        
     }
 
 

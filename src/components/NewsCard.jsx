@@ -3,10 +3,37 @@ import { CiShare2 } from "react-icons/ci";
 import { Link } from "react-router";
 import StarRatings from 'react-star-ratings';
 import { FaEye } from "react-icons/fa";
+import { useContext, useState } from "react";
+import { IoBookmark } from "react-icons/io5";
+import { AutContext } from "../Context/AuthContext";
 
 const NewsCard = ({ eachData }) => {
 
+    const { bookmarkedNews, setBookmarkedNews } = useContext(AutContext)
+    // this variable holds the status of the news has been bookmarked or not 
+    const bookmarkStatus = bookmarkedNews.some(each => each._id == eachData._id);
+    // bookmark status
+    const [bookmarked, setBookmarked] = useState(bookmarkStatus)
+
     const { author, title, image_url, details, rating, total_view } = eachData;
+
+
+    function handleBookMarkedNews() {
+        setBookmarked(!bookmarked)
+        // when bookmark status is false ,
+        if (!bookmarked) {
+            setBookmarkedNews([...bookmarkedNews, eachData])
+
+            console.log(bookmarkedNews)
+        }
+        // when bookmark is true
+        if (bookmarked) {
+            let filteredBookmarkedNews = bookmarkedNews.filter((each) => each._id !== eachData._id);
+            setBookmarkedNews(filteredBookmarkedNews);
+            console.log(bookmarkedNews)
+        }
+    }
+
     return (
         <div className="border flex flex-col border-gray-200 rounded ">
 
@@ -20,7 +47,7 @@ const NewsCard = ({ eachData }) => {
                 </div>
 
                 <div className="flex text-2xl font-bold text-[#6b6b6f]">
-                    <Link><CiBookmark></CiBookmark></Link>
+                    <Link onClick={handleBookMarkedNews}>{bookmarked ? <IoBookmark className="text-black"></IoBookmark> : <CiBookmark></CiBookmark>}</Link>
                     <Link><CiShare2></CiShare2></Link>
                 </div>
             </div>

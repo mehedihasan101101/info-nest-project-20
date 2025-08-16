@@ -6,6 +6,7 @@ import { useContext, useState } from "react";
 import { RxCross1 } from "react-icons/rx";
 import MainIcon from "../assets/mainIcon.png";
 import { AutContext } from "../Context/AuthContext";
+import userAvatar from "./../assets/user.png"
 
 
 const NavBar = () => {
@@ -18,7 +19,7 @@ const NavBar = () => {
     function handleLogOut() {
 
         logOut()
-            .then( () =>
+            .then(() =>
                 SetUser(null)
 
             )
@@ -66,7 +67,7 @@ const NavBar = () => {
                     <div tabIndex={0} role="button" className="">
 
                         {user ?
-                            <img className="w-10 rounded-full" src={user.photoURL} alt="" srcset="" />
+                            <img className="w-9 rounded-full" src={user?.photoURL ? user.photoURL : userAvatar} alt="" srcset="" />
                             :
                             <div className="border border-black/50 px-1 py-1 rounded hover:border-black"><CiUser className="text-black/90 hover:text-black"></CiUser> </div>}
 
@@ -75,12 +76,20 @@ const NavBar = () => {
                     <ul
                         tabIndex={0}
                         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                        <li>
-                            <a className="justify-between">
-                                Profile
-                                <span className="badge">New</span>
-                            </a>
-                        </li>
+                        {user && (
+                            <li>
+                                <Link to="dashboard">
+                                    Dashboard <span className="badge">New</span>
+                                </Link>
+                            </li>
+                        )}
+
+
+
+
+
+
+
                         {
                             !user && <li>
                                 <Link to={"login"}>Login</Link>

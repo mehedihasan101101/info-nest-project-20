@@ -52,7 +52,7 @@ const SignUp = () => {
 
                     {/* Image URL */}
                     <label className="font-bold">Photo URL</label>
-                    <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full" required placeholder="https://"
+                    <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full"  placeholder="https://"
                         pattern="^(https?://)?([a-zA-Z0-9]([a-zA-Z0-9-].*[a-zA-Z0-9])?.)+[a-zA-Z].*$"
                         title="Must be valid URL" />
                     {/* Email */}
