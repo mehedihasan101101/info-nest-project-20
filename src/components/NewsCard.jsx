@@ -19,7 +19,7 @@ const NewsCard = ({ eachData }) => {
 
 
     function handleBookMarkedNews() {
-        setBookmarked(!bookmarked)
+        setBookmarked(!bookmarkStatus)
         // when bookmark status is false ,
         if (!bookmarked) {
             setBookmarkedNews([...bookmarkedNews, eachData])
