@@ -26,7 +26,7 @@ const BookmarkCard = ({ eachMarkedNews }) => {
                 </div>
             </div>
 
-            <button onClick={handleDelete} className="text-2xl text-red-500"><MdDeleteForever></MdDeleteForever></button>
+            <button onClick={handleDelete} className="text-2xl text-red-500 cursor-pointer"><MdDeleteForever></MdDeleteForever></button>
 
         </div>
     );
