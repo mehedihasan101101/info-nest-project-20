@@ -32,7 +32,7 @@ const NavBar = () => {
     const navFields = [
         { id: 1, path: "home", name: "Home" },
         { id: 2, path: "about", name: "About Us" },
-        { id: 3, path: "/Dashboard", name: "Career" },
+        { id: 3, path: "Dashboard", name: "Dashboard" },
     ]
 
     if (open) {

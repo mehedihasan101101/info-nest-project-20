@@ -3,12 +3,13 @@ import { AutContext } from "../Context/AuthContext";
 import userAvatar from "./../assets/user.png"
 import BookmarkCard from "./../components/BookmarkCard"
 import LoadingPage from "./../pages/LoadingPage"
-import { useNavigate } from "react-router";
+import { Navigate, useLocation } from "react-router";
 import { CiBookmarkRemove } from "react-icons/ci";
 
 const Dashboard = () => {
     const { user, bookmarkedNews, loading } = useContext(AutContext);
-    const navigate = useNavigate()
+    const location = useLocation();
+
 
     if (loading) {
         return <LoadingPage></LoadingPage>
@@ -55,7 +56,7 @@ const Dashboard = () => {
         );
     }
     if (!user) {
-        navigate('/')
+        return <Navigate state={location.pathname} to={'/login'}></Navigate>
     }
 
 };
