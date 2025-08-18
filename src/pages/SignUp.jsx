@@ -48,11 +48,12 @@ const SignUp = () => {
                     {/* Name Field */}
                     <label className="font-bold">Your Name</label>
                     <input type="text" name="Name" className="input validator border-0 bg-gray-100 border-gray-200 w-full " required placeholder="Enter Your Name"
-                        pattern="[A-Za-z][A-Za-z0-9\-]*" minlength="3" maxlength="30" title="Only letters, numbers or dash" />
+                        pattern="[A-Za-z][A-Za-z0-9\- ]*" minlength="3" maxlength="30" title="Only letters, numbers or dash" />
 
                     {/* Image URL */}
                     <label className="font-bold">Photo URL</label>
-                    <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full"  placeholder="https://"
+                    <p className="text-[12px] text-gray-500">https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg</p>
+                    <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full" placeholder="https://"
                         pattern="^(https?://)?([a-zA-Z0-9]([a-zA-Z0-9-].*[a-zA-Z0-9])?.)+[a-zA-Z].*$"
                         title="Must be valid URL" />
                     {/* Email */}

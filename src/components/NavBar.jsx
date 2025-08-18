@@ -11,7 +11,7 @@ import userAvatar from "./../assets/user.png"
 
 const NavBar = () => {
     // State to handle mobile menu open/close
-    const { user, logOut, SetUser } = useContext(AutContext);
+    const { user, logOut, SetUser, setBookmarkedNews } = useContext(AutContext);
     const [open, setOpen] = useState(false);
     console.log(user)
 
@@ -19,9 +19,10 @@ const NavBar = () => {
     function handleLogOut() {
 
         logOut()
-            .then(() =>
+            .then(() => {
                 SetUser(null)
-
+                setBookmarkedNews([])
+            }
             )
             .catch(error => {
                 console.log(error)
@@ -67,7 +68,7 @@ const NavBar = () => {
                     <div tabIndex={0} role="button" className="">
 
                         {user ?
-                            <img className="w-9 rounded-full" src={user?.photoURL ? user.photoURL : userAvatar} alt="" srcset="" />
+                            <img className="w-9 h-9 rounded-full" src={user?.photoURL ? user.photoURL : userAvatar} alt="" srcset="" />
                             :
                             <div className="border border-black/50 px-1 py-1 rounded hover:border-black"><CiUser className="text-black/90 hover:text-black"></CiUser> </div>}
 
@@ -83,12 +84,6 @@ const NavBar = () => {
                                 </Link>
                             </li>
                         )}
-
-
-
-
-
-
 
                         {
                             !user && <li>

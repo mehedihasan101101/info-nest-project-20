@@ -22,8 +22,8 @@ const NewsSection = () => {
                 }
 
             </div>
-            <div className="w-full flex  flex-col items-center mt-5">
-                <button onClick={handleLoadMore} className="btn text-red-500 border border-red-500" disabled={visible >= data.length}>Load More </button>
+            <div className="w-full flex  flex-col items-center mt-10">
+                <button onClick={handleLoadMore} className="btn" disabled={visible >= data.length}>Load More </button>
             </div>
 
 
