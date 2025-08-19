@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import { AutContext, AuthContext } from "../Context/AuthContext";
+import { AutContext } from "../Context/AuthContext";
 import { sendEmailVerification } from "firebase/auth";
 import auth from "../firebase/firebase.init";
 import { Link, useLocation } from "react-router";
@@ -7,10 +7,12 @@ const SignUp = () => {
     const location = useLocation()
     console.log(location)
     const { singUp, updateUser } = useContext(AutContext);
-    const [success, setSuccess] = useState(false)
+    const [success, setSuccess] = useState(false);
+    const [errorMessage, setErrorMessage] = useState("")
     function handleSignUp(e) {
         e.preventDefault()
         setSuccess(false);
+        setErrorMessage(""); 
         const name = e.target.Name.value;
         const ImgLink = e.target.image.value;
         const email = e.target.email.value;
@@ -30,7 +32,7 @@ const SignUp = () => {
                 updateUser(name, ImgLink)
             })
             .catch(err => {
-                console.log(err)
+                setErrorMessage(err.message)
             })
 
     }
@@ -39,8 +41,6 @@ const SignUp = () => {
         <div className=" flex flex-col justify-center items-center  mt-13 pb-12">
             <div className=" lg:w-[35%] w-[98%]  rounded flex flex-col items-center space-y-3 px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                 <h1 className="text-3xl font-bold text-black  pb-3">Create your Account</h1>
-                {/* Success Message */}
-                {success && <p className="text-green-600 text-center">Account created! Please check your email for the verification link — you must verify your account to log in.. </p>}
                 <hr className=" text-gray-200 w-full pb-2" />
                 {/* form */}
 
@@ -51,11 +51,14 @@ const SignUp = () => {
                         pattern="[A-Za-z][A-Za-z0-9\- ]*" minlength="3" maxlength="30" title="Only letters, numbers or dash" />
 
                     {/* Image URL */}
-                    <label className="font-bold">Photo URL</label>
-                    <p className="text-[12px] text-gray-500">https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg</p>
-                    <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full" placeholder="https://"
-                        pattern="^(https?://)?([a-zA-Z0-9]([a-zA-Z0-9-].*[a-zA-Z0-9])?.)+[a-zA-Z].*$"
-                        title="Must be valid URL" />
+                    <div className="space-y-2">
+                        <label className="font-bold">Image Link <sup className="label text-[12px] ">(Optional)</sup></label>
+                        <p className="text-[12px] text-gray-500">Add your image URL, or use the example above<br></br>https://images.pexels.com/photos/1704488/pexels-photo-1704488.jpeg</p>
+                        <input name="image" type="url" className="input validator border-0 bg-gray-100 border-gray-200 w-full" placeholder="https://"
+                            pattern="^(https?://)?([a-zA-Z0-9]([a-zA-Z0-9-].*[a-zA-Z0-9])?.)+[a-zA-Z].*$"
+                            title="Must be valid URL" />
+                    </div>
+
                     {/* Email */}
                     <label className="font-bold">Email</label>
                     <input name="email" className="input validator  border-0 bg-gray-100 border-gray-200 w-full" type="email" required placeholder="mail@site.com" />
@@ -73,9 +76,19 @@ const SignUp = () => {
 
                     <p className="">Already have an Account!<Link state={location.state} to={"/login"} className="text-blue-500 ml-1">Login</Link></p>
 
+                    {/* Success Message */}
+
+
+                    {success && <p className="text-green-600 ">Account created! Please check your inbox or spam folder for the verification email — you must verify your account before logging in.</p>}
+
+                    {/* Error Message */}
+                    {errorMessage && <p className="text-red-500">{errorMessage}</p>}
 
                     {/* submit */}
                     <input className="btn bg-black text-white " type="submit" value="Register" />
+
+
+
                 </form>
 
             </div>
