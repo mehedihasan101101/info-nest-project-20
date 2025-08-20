@@ -5,8 +5,7 @@ import auth from "../firebase/firebase.init";
 import { Link, useLocation } from "react-router";
 const SignUp = () => {
     const location = useLocation()
-    console.log(location)
-    const { singUp, updateUser } = useContext(AutContext);
+    const { singUp, updateUser, setLoading } = useContext(AutContext);
     const [success, setSuccess] = useState(false);
     const [errorMessage, setErrorMessage] = useState("")
     function handleSignUp(e) {
@@ -27,12 +26,15 @@ const SignUp = () => {
                     .then(() => {
                         console.log("email sent")
                         setSuccess(true);
+                        setLoading(false)
                     })
                 // profile update
                 updateUser(name, ImgLink)
             })
             .catch(err => {
+
                 setErrorMessage(err.message)
+                setLoading(false)
             })
 
     }
