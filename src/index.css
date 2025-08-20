@@ -11,6 +11,9 @@
 }
 
 @theme {
-    --font-bitcount: Bitcount, "sans-serif"
+    --font-bitcount: Bitcount, "sans-serif";
+    --breakpoint-sm: 640px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 1200px;
 }
 

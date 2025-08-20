@@ -47,10 +47,10 @@ const NavBar = () => {
 
             <div className="container m-auto flex justify-between items-center ">
                 <div className="flex gap-1">
-                    {/* Mobile Menu Toggle Icon */}
-                    <div className="lg:hidden z-50 ">
+                    {/* Mobile Menu  Icon */}
+                    <div className="lg:hidden  ">
                         {
-                            open ? <RxCross1 onClick={() => setOpen(!open)} className="text-2xl font-normal"></RxCross1> : <IoIosMenu onClick={() => setOpen(!open)} className="text-2xl font-normal"></IoIosMenu>
+                            <IoIosMenu onClick={() => setOpen(!open)} className="text-2xl font-normal"></IoIosMenu>
                         }
                     </div>
                     {/* Live*/}
@@ -61,7 +61,7 @@ const NavBar = () => {
 
 
                 {/* Main Icon */}
-                <img className="md:w-[300px] w-[220px]" src={MainIcon} alt="" />
+                <Link to={'/'}><img className="md:w-[300px] w-[220px]" src={MainIcon} alt="" /></Link>
 
                 {/* Add to Cart button */}
                 <div className="dropdown dropdown-end">
@@ -109,11 +109,11 @@ const NavBar = () => {
 
             </div>
             {/* Navigation Links */}
-            <div className={` ${open ? "left-0" : "left-[-500px]"} duration-700  lg:static lg:block  lg:w-auto lg:h-auto md:w-[30%] w-[45%] top-0 h-screen z-40 bg-neutral-100/90 lg:bg-transparent   absolute `}>
+            <div className={` ${open ? "left-0" : "left-[-500px]"} duration-700  lg:static lg:block  lg:w-auto lg:h-auto md:w-[30%] w-[45%] top-0 h-screen z-40 bg-[#F3F3F3] lg:bg-transparent   absolute `}>
+                <RxCross1 onClick={() => setOpen(!open)} className="text-2xl font-normal absolute top-8 left-1 lg:hidden"></RxCross1>
+                <ul className="lg:flex relative   gap-7 lg:mt-0 mt-20 lg:bg-transparent text-[#6b6b6f]">
 
-                <ul className="lg:flex   gap-7 lg:mt-0 mt-20 lg:bg-transparent text-[#6b6b6f]">
-
-                    {navFields.map((field) => <NavLink key={field.id} to={field.path} className={({ isActive }) => `rounded px-3 py-2 block ${isActive ? "text-black/80" :
+                    {navFields.map((field) => <NavLink key={field.id} to={field.path} className={({ isActive }) => `rounded px-6 py-2 block ${isActive ? "text-black/80" :
                         " hover:bg-neutral-100"}`}>{field.name}</NavLink>)}
                 </ul>
             </div>
