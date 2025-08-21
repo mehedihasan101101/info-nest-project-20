@@ -11,7 +11,7 @@ const Login = () => {
 
     const location = useLocation()
     console.log(location)
-    const { LogIn, SetUser, user, loading, setLoading } = useContext(AutContext)
+    const { LogIn, SetUser, user, loading, setLoading, handleSignInWithGoogle } = useContext(AutContext)
 
     // reverifying user
 
@@ -54,6 +54,20 @@ const Login = () => {
                 console.log(error.message)
             })
     }
+
+    function handleGoogleLogIn() {
+        handleSignInWithGoogle()
+            .then(result => {
+                SetUser(result.user)
+                setLoading(false)
+            })
+            .catch(err => {
+                setLoading(false)
+                setErrorMessage(err.message)
+                console.log(err.message)
+            })
+    }
+
     if (loading) {
         return <LoadingPage></LoadingPage>
     }
@@ -71,7 +85,7 @@ const Login = () => {
     if (!user) {
         return (
             <div className=" flex flex-col justify-center items-center  mt-13 pb-12">
-                <div className=" lg:w-[35%] md:w-[70%] w-[98%]  rounded flex flex-col items-center space-y-3 px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
+                <div className=" lg:w-[35%] md:w-[70%] w-[98%]  rounded flex flex-col items-center  px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
                     <h1 className="text-3xl font-bold text-black  pb-3">Create your Account</h1>
                     <hr className=" text-gray-200 w-full pb-2" />
                     {/* form */}
@@ -96,8 +110,15 @@ const Login = () => {
                         {errorMessage && <p className="text-red-500">{errorMessage}</p>}
                         {verificationErr && <p className="text-red-500">Please verify your email to log in.<Link state={location.state} onClick={reVerify} className="text-blue-500">Resend</Link></p>}
                         {/* submit */}
-                        <input className="btn bg-black text-white " type="submit" value="Login" />
+                        <input className="btn  bg-black text-white " type="submit" value="Login" />
                     </form>
+                    <div className="divider 6 px-3">OR</div>
+                    <div className="px-3 w-full">
+                        <button onClick={handleGoogleLogIn} className="btn w-full bg-white text-black border-[#e5e5e5]">
+                            <svg aria-label="Google logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g><path d="m0 0H512V512H0" fill="#fff"></path><path fill="#34a853" d="M153 292c30 82 118 95 171 60h62v48A192 192 0 0190 341"></path><path fill="#4285f4" d="m386 400a140 175 0 0053-179H260v74h102q-7 37-38 57"></path><path fill="#fbbc02" d="m90 341a208 200 0 010-171l63 49q-12 37 0 73"></path><path fill="#ea4335" d="m153 219c22-69 116-109 179-50l55-54c-78-75-230-72-297 55"></path></g></svg>
+                            Login with Google
+                        </button>
+                    </div>
 
                 </div>
             </div>

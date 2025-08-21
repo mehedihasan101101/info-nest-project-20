@@ -1,6 +1,6 @@
 import { CiBookmark } from "react-icons/ci";
 import { CiShare2 } from "react-icons/ci";
-import { Link } from "react-router";
+import { Link, useNavigate } from "react-router";
 import StarRatings from 'react-star-ratings';
 import { FaEye } from "react-icons/fa";
 import { useContext, useState } from "react";
@@ -9,29 +9,35 @@ import { AutContext } from "../Context/AuthContext";
 
 const NewsCard = ({ eachData }) => {
 
-    const { bookmarkedNews, setBookmarkedNews } = useContext(AutContext)
+    const { bookmarkedNews, setBookmarkedNews, user } = useContext(AutContext)
     // this variable holds the status of the news has been bookmarked or not 
     const bookmarkStatus = bookmarkedNews.some(each => each._id == eachData._id);
     // bookmark status
     const [bookmarked, setBookmarked] = useState(bookmarkStatus)
 
     const { author, title, image_url, details, rating, total_view } = eachData;
-
+    const navigate = useNavigate();
 
     function handleBookMarkedNews() {
         setBookmarked(!bookmarkStatus)
         // when bookmark status is false ,
-        if (!bookmarked) {
-            setBookmarkedNews([...bookmarkedNews, eachData])
 
-            console.log(bookmarkedNews)
+        if (user) {
+            if (!bookmarked) {
+                setBookmarkedNews([...bookmarkedNews, eachData])
+                console.log(bookmarkedNews)
+            }
+            // when bookmark is true
+            if (bookmarked) {
+                let filteredBookmarkedNews = bookmarkedNews.filter((each) => each._id !== eachData._id);
+                setBookmarkedNews(filteredBookmarkedNews);
+                console.log(bookmarkedNews)
+            }
         }
-        // when bookmark is true
-        if (bookmarked) {
-            let filteredBookmarkedNews = bookmarkedNews.filter((each) => each._id !== eachData._id);
-            setBookmarkedNews(filteredBookmarkedNews);
-            console.log(bookmarkedNews)
+        if (!user) {
+            navigate("/login")
         }
+
     }
 
     return (

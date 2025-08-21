@@ -68,7 +68,7 @@ const NavBar = () => {
                     <div tabIndex={0} role="button" className="">
 
                         {user ?
-                            <img className="w-9 h-9 rounded-full" src={user?.photoURL ? user.photoURL : userAvatar} alt="" srcset="" />
+                            <img referrerPolicy="no-referrer" className="w-9 h-9 rounded-full" src={user?.photoURL ? user.photoURL : userAvatar} alt="" srcset="" />
                             :
                             <div className="border border-black/50 px-1 py-1 rounded hover:border-black"><CiUser className="text-black/90 hover:text-black"></CiUser> </div>}
 
