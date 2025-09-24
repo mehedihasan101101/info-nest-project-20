@@ -32,6 +32,10 @@ const Home = () => {
 
                 </aside>
             </div>
+
+            <div className="flex items-center justify-center h-36 bg-red-400">
+                <h1>Hi,I am Curved Shaped</h1>
+            </div>
         </>
     );
 };
