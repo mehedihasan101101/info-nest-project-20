@@ -86,7 +86,7 @@ const Login = () => {
         return (
             <div className=" flex flex-col justify-center items-center  mt-13 pb-12">
                 <div className=" lg:w-[35%] md:w-[70%] w-[98%]  rounded flex flex-col items-center  px-6 pb-10 pt-8 shadow-[0px_2px_3px_-1px_rgba(0,0,0,0.1),0px_1px_0px_0px_rgba(25,28,33,0.02),0px_0px_0px_1px_rgba(25,28,33,0.08)]">
-                    <h1 className="text-3xl font-bold text-black  pb-3">Create your Account</h1>
+                    <h1 className="text-3xl font-bold text-black  pb-3">Log In</h1>
                     <hr className=" text-gray-200 w-full pb-2" />
                     {/* form */}
 

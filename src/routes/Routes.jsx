@@ -25,8 +25,6 @@ const router = createBrowserRouter([
                 index: true,
                 element: <Navigate to={"home"}></Navigate>
             },
-
-
             {
                 path: `home`,
                 element: <Home></Home>,
